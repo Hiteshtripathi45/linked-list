@@ -1,4 +1,4 @@
-import { Node } from "./node";
+import { Node } from "./node.js";
 
 export class linkedlist{
     constructor(){
@@ -26,6 +26,15 @@ export class linkedlist{
                 temp=temp.next
             }
             temp.next= new Node(newnode)
+        }
+    }
+
+    isstring(){
+        let temp = this.linkhead
+        while(temp!==null){
+            console.log(temp)
+            temp=temp.next
+
         }
     }
 }
