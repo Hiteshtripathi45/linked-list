@@ -15,4 +15,17 @@ export class linkedlist{
         this.linkhead.next=temp
         }
     }
+
+    append(newnode){
+        if(this.linkhead==null){
+            this.linkhead= new Node(newnode)
+        }
+        else{
+            let temp = this.linkhead
+            while(temp.next!==null){
+                temp=temp.next
+            }
+            temp.next= new Node(newnode)
+        }
+    }
 }
