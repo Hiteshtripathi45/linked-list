@@ -33,7 +33,7 @@ export class linkedlist{
         let temp = this.linkhead
         let store = ''
         while(temp!==null){
-            store = store+temp
+            store = store+temp.value
             temp=temp.next
 
         }
@@ -49,5 +49,9 @@ export class linkedlist{
 
         }
         console.log(count)
+    }
+
+    head(){
+        console.log(this.linkhead.value)
     }
 }
