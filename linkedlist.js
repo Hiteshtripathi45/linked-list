@@ -31,10 +31,23 @@ export class linkedlist{
 
     isstring(){
         let temp = this.linkhead
+        let store = ''
         while(temp!==null){
-            console.log(temp)
+            store = store+temp
             temp=temp.next
 
         }
+        console.log(temp)
+    }
+
+    size(){
+        let count = 0
+        let temp = this.linkhead
+        while(temp!==null){
+            count+=1
+            temp=temp.next
+
+        }
+        console.log(count)
     }
 }
