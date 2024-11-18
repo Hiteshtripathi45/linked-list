@@ -33,11 +33,11 @@ export class linkedlist{
         let temp = this.linkhead
         let store = ''
         while(temp!==null){
-            store = store+temp.value
+            store +=`(${temp.value})=>`
             temp=temp.next
 
         }
-        console.log(temp)
+        console.log(store)
     }
 
     size(){
