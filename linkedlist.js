@@ -62,4 +62,15 @@ export class linkedlist{
         }
         console.log(temp.value)
     }
+
+    at(index){
+        let temp = this.linkhead
+        let c=0
+        while(temp.value!==index){
+            temp=temp.next
+            c=c+1
+        }
+        console.log(c)
+
+    }
 }
