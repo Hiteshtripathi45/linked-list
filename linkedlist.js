@@ -54,4 +54,12 @@ export class linkedlist{
     head(){
         console.log(this.linkhead.value)
     }
+
+    tail(){
+        let temp = this.linkhead
+        while(temp.next!==null){
+            temp=temp.next
+        }
+        console.log(temp.value)
+    }
 }
